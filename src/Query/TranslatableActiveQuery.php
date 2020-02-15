@@ -81,6 +81,9 @@ class TranslatableActiveQuery extends \yii\db\ActiveQuery
      */
     private function addWhereFromProperty($property, $condition)
     {
+        if (empty($condition[2])) {
+            return $this;
+        }
         /**
          * @var TranslatableInterface $model
          */
@@ -96,7 +99,7 @@ class TranslatableActiveQuery extends \yii\db\ActiveQuery
                 $nameParam = ':' . $property;
 
                 $query = sprintf(
-                    "'%s->$.%s.%s' %s %s",
+                    '%s->"$.%s.%s" %s %s',
                     $model->attributeNameForTranslate(),
                     rtrim($property, ucfirst($language->getCode())),
                     $language->getCode(),
