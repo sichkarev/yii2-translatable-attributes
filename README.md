@@ -54,7 +54,7 @@ class TestTranslatableModel extends ActiveRecord implements TranslatableInterfac
         );
     }
 
-    public function attributeNameForTranslate(): string
+    public function attributeNameForTranslate()
     {
         return 'translations';
     }
