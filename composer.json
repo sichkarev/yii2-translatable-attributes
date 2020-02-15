@@ -1,0 +1,29 @@
+{
+    "name": "sichkarev/yii2-translatable-attributes",
+    "description": "Component add support translatable properties to ActiveRecord models",
+    "type": "yii2-extension",
+    "require": {
+        "php": ">=5.6",
+        "ext-json": "*",
+        "yiisoft/yii2": "^2.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "^4.1",
+        "codeception/module-yii2": "^1.1",
+        "yiisoft/yii2-faker": "^2.0",
+        "codeception/verify": "^1.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sichkarev",
+            "email": "mrvector@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sichkarev\\Translatable\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
