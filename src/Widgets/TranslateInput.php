@@ -81,7 +81,7 @@ class TranslateInput extends \yii\widgets\InputWidget
      * @param string $label
      * @return string
      */
-    private function renderInput($attribute, $label)
+    protected function renderInput($attribute, $label)
     {
         $form = $this->field->label(false)->form;
 
