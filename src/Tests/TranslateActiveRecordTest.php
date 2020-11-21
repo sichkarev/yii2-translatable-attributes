@@ -1,6 +1,6 @@
 <?php
 
-namespace Sichkarev\Translatable\Tests\Unit;
+namespace Sichkarev\Translatable\Tests;
 
 use Codeception\Test\Unit;
 use Sichkarev\Translatable\Crud\Models\TestTranslatableModel;
